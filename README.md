@@ -6,7 +6,7 @@ Copy and paste(or clone) module to folder ***[root_magento_dir]/app/code/Tests**
 then in CLI run ***php bin/magento setup:upgrade***
 
 ## How to use
-Call url http://[host-name]/rest/V1/api/rce/calculator/
+Call url ***http://[host-name]/rest/V1/api/rce/calculator/***
 
 ## Parameters
 * "left": First number (int|float),<br>

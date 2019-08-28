@@ -66,13 +66,12 @@ class Calculator
                 $status = 'Error';
             }
         }
-
-        return [
-            [
-                'status' => $status,
-                'result' => $result
-            ]
+        $response = [
+            'status' => $status,
+            'result' => $result
         ];
+
+        return json_encode($response);
     }
 
     /**

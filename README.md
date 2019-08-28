@@ -9,10 +9,10 @@ then in CLI run php bin/magento setup:upgrade
 Call url http://[host-name]/rest/V1/api/rce/calculator/
 
 ## Parameters
-"left": First number (int|float),<br>
-"right": Second number (int|float),<br>
-"operator": Operator for operation (string), may take values - [add,subtract,multiply,divide,power]<br>
-"precision": Precision (int) - Optional parameter , default value - 2<br>
+* "left": First number (int|float),<br>
+* "right": Second number (int|float),<br>
+* "operator": Operator for operation (string), may take values - [add,subtract,multiply,divide,power]<br>
+* "precision": Precision (int) - Optional parameter , default value - 2<br>
 
 ## Example request
 {<br>

@@ -2,8 +2,8 @@
 
 ## Installation:
 
-Copy and paste(or clone) module to folder [root_magento_dir]/app/code/Tests 
-then in CLI run php bin/magento setup:upgrade
+Copy and paste(or clone) module to folder ***[root_magento_dir]/app/code/Tests*** 
+then in CLI run ***php bin/magento setup:upgrade***
 
 ## How to use
 Call url http://[host-name]/rest/V1/api/rce/calculator/

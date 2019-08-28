@@ -3,10 +3,16 @@
 namespace Tests\Calculator\Api\Model;
 
 use Exception;
+use Magento\Framework\Serialize\SerializerInterface;
 
 class Calculator
 {
     const DEFAULT_PRECISION = 2;
+
+    /**
+     * @var SerializerInterface
+     */
+    private $serializer;
 
     /* @var $precision */
     private $precision;
@@ -28,6 +34,17 @@ class Calculator
         'divide',
         'power'
     ];
+
+    /**
+     * Calculator constructor.
+     * @param SerializerInterface $serializer
+     */
+    public function __construct(
+        SerializerInterface $serializer
+    ) {
+        $this->serializer = $serializer;
+    }
+
 
     /**
      * Returns total result
@@ -71,7 +88,7 @@ class Calculator
             'result' => $result
         ];
 
-        return json_encode($response);
+        return $this->serializer->serialize($response);
     }
 
     /**

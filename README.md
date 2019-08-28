@@ -15,7 +15,7 @@ Call url http://[host-name]/rest/V1/api/rce/calculator/
 "precision": Precision (int) - Optional parameter , default value - 2<br>
 
 ## Example request
-{
+{<br>
   "left": 12.34,<br>
   "right": 56.78,<br>
   "operator": "string",<br>
@@ -23,7 +23,7 @@ Call url http://[host-name]/rest/V1/api/rce/calculator/
 }
 
 ## Example response
-{
+{<br>
   "status": "OK",<br>
   "result": 123.45<br>
 }

@@ -53,7 +53,7 @@ class Calculator
      * @param float|int $right
      * @param string $operator
      * @param int|null $precision
-     * @return array result
+     * @return bool|string
      * @throws Exception
      * @api
      */

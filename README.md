@@ -10,13 +10,9 @@ Call url http://[host-name]/rest/V1/api/rce/calculator/
 
 ## Parameters
 "left": First number (int|float),
----
 "right": Second number (int|float),
----
 "operator": Operator for operation (string), may take values - [add,subtract,multiply,divide,power]
----
 "precision": Precision (int) - Optional parameter , default value - 2
----
 
 ## Example request
 {

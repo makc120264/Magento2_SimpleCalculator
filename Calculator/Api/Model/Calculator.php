@@ -88,7 +88,7 @@ class Calculator
             'result' => $result
         ];
 
-        return $this->serializer->serialize($response);
+        return $response;
     }
 
     /**
